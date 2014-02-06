@@ -1,0 +1,249 @@
+/* 
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+     margin: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right; 
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left; 
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+html, body {
+	height: 100%;
+}	
+
+body {
+    margin: 0;
+    font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2em;
+    background: #F2EAD5;
+    color: #444444;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+}
+
+
+h1 {
+    font-size: 2em;
+    line-height: 3em;
+}
+
+h2 {
+    font-size: 1.4em;
+    line-height: 2.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+h2 + p {
+	line-height:2em;
+	margin: 0;
+}
+
+ul {
+	padding-left: 0;
+}
+
+ul li {
+	list-style-type: none;
+	padding: 0;
+}
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+
+
+/* Center the container */
+#container {
+    //border: 1px solid #bbb;
+	width: 980px;
+	margin: 0 auto;
+	min-height: 100%;
+	margin-bottom: -275px;
+	
+	display: relative;
+}
+
+#container:after {
+  content: "";
+  display: block;
+}
+
+#header {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#content {
+	display: relative;
+}
+
+.glass {
+	position: absolute;
+	top: 50%;
+  	left: 50%;
+  	margin-top: -180px;
+  	margin-left: -138px;
+    animation:fadeIn 7s;
+    -webkit-animation:fadeIn 7s;
+
+}
+
+#table, #container:after {
+  height: 275px; 
+}
+
+#table {
+  background-color: #D6A263;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ingredient-wrapper {
+	color: #fff;
+	display: block;
+	padding-top: 85px;
+	background-color: #D6A263;
+}
+
+.ingredients li {	
+	display: inline-block;
+	padding-right: 20px;
+}
+
+.description, .vitamins {
+	display: inline-block;
+	width: 300px;
+	padding: 0 20px 20px;
+}
+
+.vitamins {
+	float: right;
+}
+
+.vitamins-list {
+	
+}
+.Potassium{
+
+}
+.VitaminA{
+
+}
+.VitaminC{
+
+}
+.Calcium{
+
+}
+.selected{
+     /*border:5px solid red;*/
+}
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+
+ @media screen and (max-width: 1080px) {
+   
+}
+
+@media screen and (max-width: 1000px) {
+    
+}	
+
+@media screen and (max-width: 960px) { 
+    #container {
+    	width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 525px) {
+    #header .logo {
+    	width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+   
+}    
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+
+
